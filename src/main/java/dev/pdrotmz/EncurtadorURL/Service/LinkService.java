@@ -1,6 +1,5 @@
 package dev.pdrotmz.EncurtadorURL.Service;
 
-
 import dev.pdrotmz.EncurtadorURL.Model.Link;
 import dev.pdrotmz.EncurtadorURL.Repository.LinkRepository;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -38,6 +37,5 @@ public class LinkService {
         } catch (Exception erro) {
             throw new RuntimeException("Url não existe no registro", erro);
         }
-
     }
 }
