@@ -15,16 +15,19 @@ public class Link {
     private String urlEncurtada;
     private String urlQrCode;
     private LocalDateTime urlCriadaEm;
+    private String urlOriginal;
+
 
     public Link() {
     }
 
-    public Link(Long id, String urlLonga, String urlEncurtada, String urlQrCode, LocalDateTime urlCriadaEm) {
+    public Link(Long id, String urlLonga, String urlEncurtada, String urlQrCode, LocalDateTime urlCriadaEm, String urlOriginal) {
         this.id = id;
         this.urlLonga = urlLonga;
         this.urlEncurtada = urlEncurtada;
         this.urlQrCode = urlQrCode;
         this.urlCriadaEm = urlCriadaEm;
+        this.urlOriginal = urlOriginal;
     }
 
     public Long getId() {
@@ -65,5 +68,13 @@ public class Link {
 
     public void setUrlCriadaEm(LocalDateTime urlCriadaEm) {
         this.urlCriadaEm = urlCriadaEm;
+    }
+
+    public String getUrlOriginal() {
+        return urlOriginal;
+    }
+
+    public void setUrlOriginal(String urlOriginal) {
+        this.urlOriginal = urlOriginal;
     }
 }
