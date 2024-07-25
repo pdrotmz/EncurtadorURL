@@ -16,8 +16,8 @@ public class LinkService {
     }
 
     // Gerando uma url aleatória
-    //TODO: REFATORAR PARA INCLUIR PARTE DA URL ORIGINAL NO NOSSO ALGORITMO DE GERAÇÃO DE URL
-    public String gerarUrlAleatoria(){
+    // TODO: REFATORAR PARA INCLUIR PARTE DA URL ORIGINAL NO NOSSO ALGORITMO DE GERAÇÃO DE URL
+    public String gerarUrlAleatoria() {
         return RandomStringUtils.randomAlphanumeric(5, 10);
     }
 
