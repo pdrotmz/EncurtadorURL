@@ -33,7 +33,7 @@ public class LinkService {
 
     public Link obterUrlOriginal(String urlEncurtada) {
         try {
-            return repository.findByUrlOriginal(urlEncurtada);
+            return repository.findByUrlEncurtada(urlEncurtada);
         } catch (Exception erro) {
             throw new RuntimeException("Url não existe no registro", erro);
         }
