@@ -25,7 +25,7 @@ public class LinkController {
         String urlOriginal = request.get("urlOriginal");
         Link link = service.encurtarUrl(urlOriginal);
 
-        String gerarUrlDeRedirecionamentoDoUsuario = "http://localhost:8080/r/" + link.getUrlEncurtada();
+        String gerarUrlDeRedirecionamentoDoUsuario = "https://api-encurtaurl.onrender.com/r/" + link.getUrlEncurtada();
 
         LinkResponse response = new LinkResponse(
                 link.getId(),
