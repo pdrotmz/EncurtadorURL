@@ -1,6 +1,4 @@
-Here's a README for your GitHub repository [EncurtadorURL](https://github.com/pdrotmz/EncurtadorURL):
 
----
 
 # EncurtadorURL
 
