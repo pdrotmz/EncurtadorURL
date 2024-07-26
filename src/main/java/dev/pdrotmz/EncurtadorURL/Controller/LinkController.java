@@ -3,7 +3,6 @@ package dev.pdrotmz.EncurtadorURL.Controller;
 import dev.pdrotmz.EncurtadorURL.Model.Link;
 import dev.pdrotmz.EncurtadorURL.Model.LinkResponse;
 import dev.pdrotmz.EncurtadorURL.Service.LinkService;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,10 +14,9 @@ import java.util.Map;
 @RestController
 public class LinkController {
 
-
     private LinkService service;
 
-    public LinkController(LinkService service, LinkService linkService) {
+    public LinkController(LinkService service) {
         this.service = service;
     }
 
@@ -41,7 +39,7 @@ public class LinkController {
     }
 
     @GetMapping("/r/{urlEncurtada}")
-    public void redirecionarLink(@PathVariable String urlEncurtada, HttpServletResponse response) throws IOException{
+    public void RedirecionarLink(@PathVariable String urlEncurtada, HttpServletResponse response) throws IOException{
         Link link = service.obterUrlOriginal(urlEncurtada);
 
         if(link != null) {
