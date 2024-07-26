@@ -69,10 +69,6 @@ spring.datasource.password=${DATABASE_PASSWORD}
 
 Feel free to fork this project, submit issues, and send pull requests. Contributions are always welcome!
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 This README provides a comprehensive overview of your project, including setup instructions, API usage, and contribution guidelines. Make sure to update the details as necessary, especially the configuration section, to match your project's setup.
