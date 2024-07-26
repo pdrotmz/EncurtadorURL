@@ -6,6 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 public interface LinkRepository extends JpaRepository<Link, Long> {
 
     // Query Personalizada
-    Link findByUrlOriginal(String urlEncurtada);
-
+    Link findByUrlEncurtada(String urlEncurtada);
 }
