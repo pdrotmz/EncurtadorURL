@@ -12,11 +12,7 @@ WORKDIR /app
 COPY . .
 
 # Construir o projeto
-RUN mvn clean install
-
-# Construir o projeto sem executar os testes
-RUN mvn clean install -DskipTests
-
+RUN mvn clean install -Dmaven.test.skip=true
 
 # Estágio de runtime
 FROM openjdk:21-jdk-slim
