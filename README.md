@@ -1,4 +1,7 @@
 
+![encurtaUrl](https://github.com/user-attachments/assets/9fded2b0-7362-408f-90dc-ef82028e6eee)
+![encurtaUrlAprovado](https://github.com/user-attachments/assets/88a2f1d9-7d11-4d82-9e60-7100586936ae)
+
 
 # EncurtadorURL
 
