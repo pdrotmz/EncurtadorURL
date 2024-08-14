@@ -20,7 +20,6 @@ public class LinkController {
         this.service = service;
     }
 
-    @CrossOrigin(origins = "https://api-encurtaurl.onrender.com/") // ou o domínio de produção
     @PostMapping("encurtaUrl")
     public ResponseEntity<LinkResponse> gerarUrlEncurtada(@RequestBody Map<String, String> request){
         String urlOriginal = request.get("urlOriginal");
