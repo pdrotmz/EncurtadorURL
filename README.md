@@ -53,6 +53,14 @@ EncurtadorURL is a simple URL shortening service built with Spring Boot and Java
    mvn spring-boot:run
    ```
 
+   Using the endpoint "/encurtaUrl"
+
+   ```bash
+   https://enc-url.onrender.com/encurtaUrl
+   ```
+
+   
+
 ### Configuration
 
 The application requires a PostgreSQL database. You can set the database connection details in the `application.properties` file or use environment variables. For example:
